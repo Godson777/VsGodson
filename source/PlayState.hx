@@ -2440,6 +2440,8 @@ class PlayState extends MusicBeatState
 						value = 0;
 					case 'gf' | 'girlfriend' | '1':
 						value = 1;
+					case 'all' | 'everyone' | '2':
+						value = 2;
 				}
 
 				var time:Float = Std.parseFloat(value2);
@@ -2454,6 +2456,13 @@ class PlayState extends MusicBeatState
 						gf.playAnim('cheer', true);
 						gf.specialAnim = true;
 						gf.heyTimer = time;
+
+						if (value == 2) {
+							//We're forcing our opponent to cheer too. Suck it.
+							dad.playAnim('cheer', true);
+							dad.specialAnim = true;
+							dad.heyTimer = time;
+						}
 					}
 
 					if(curStage == 'mall') {
