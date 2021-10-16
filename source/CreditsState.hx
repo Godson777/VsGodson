@@ -24,6 +24,10 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
+		['Vs Godson Team'],
+		['GodsonTM',            'godson',           'Programmer of Vs Godson',                          'https://twitter.com/GodsonTM_',        0xFF000080],
+		['TVIYH',               'vine',             'Composer of Vs Godson',                            ''],
+		[''],
 		['Psych Engine Team'],
 		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
 		['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		0xFFC30085],
